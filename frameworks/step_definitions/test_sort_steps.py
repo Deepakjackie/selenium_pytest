@@ -2,8 +2,8 @@ from pytest_bdd import scenarios
 from pytest_bdd import given, when, then  
 from selenium.webdriver.common.by import By
 
-from pages.login_page import LoginPage
-from pages.inventory_page import Inventory_Page
+from frameworks.pages.login_page import LoginPage
+from frameworks.pages.inventory_page import Inventory_Page
 
 scenarios("../features/sort.feature")
 

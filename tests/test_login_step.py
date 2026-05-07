@@ -1,5 +1,5 @@
 from pytest_bdd import given, when, then, parsers, scenarios
-from pages.login_page import LoginPage
+from frameworks.pages.login_page import LoginPage
 scenarios('../features/login.feature')
 
 @given('I open the login page')

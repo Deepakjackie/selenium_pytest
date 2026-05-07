@@ -1,7 +1,7 @@
 from pytest_bdd import scenarios
 from pytest_bdd import given, when, then  
 
-from pages.login_page import LoginPage
+from frameworks.pages.login_page import LoginPage
 
 scenarios("../features/login.feature")
 
