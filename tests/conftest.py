@@ -23,3 +23,4 @@ def driver():
     yield driver
 
     driver.quit()
+    browser = driver
