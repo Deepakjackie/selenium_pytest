@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from pages.base_page import BasePage
+from frameworks.pages.base_page import BasePage
 import time
 
 class Inventory_Page(BasePage):
