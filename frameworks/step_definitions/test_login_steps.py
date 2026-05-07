@@ -21,11 +21,14 @@ def login_page_verification(driver):
      page = LoginPage(driver)
      assert page.is_inventory_page_displayed()
           
-@when("user enters invalid credentials")
-def invalid_login(driver):
-    login = LoginPage(driver)
-    login.login_site("invalid_user", "wrong_password")     
-
+@when("user enters invalid credentials") 
+def enter_invalid_credentials(driver):
+    page=LoginPage(driver)
+    page.login_site("wronguser","wrongpassword")
+    
 @then("login error should display")
-def login_error_validation(driver):
-    assert True 
+def verify_display_error(driver):
+    page = LoginPage(driver)
+    assert page.is_error_displayed()
+    
+    
